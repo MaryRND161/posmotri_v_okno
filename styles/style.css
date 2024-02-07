@@ -16,6 +16,9 @@ html {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -39,11 +42,11 @@ ol {
 
 .content {
   display: grid;
-  grid-template-columns: 1fr 398px;
+  grid-template-columns: 1fr 399px;
   place-items: end;
   gap: 30px;
-  margin-inline: auto;
-  margin-block: 133px;
+  /*margin-inline: auto;
+  margin-block: 133px;*/
   inline-size: 1140px;
 }
 
@@ -82,7 +85,6 @@ ol {
 }
 
 .search-form__label {
-  position: relative;
   display: inline-flex;
   align-items: center;
   cursor: pointer;
@@ -129,6 +131,9 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 19px;
   height: 19px;
   margin-right: 5px;
@@ -141,11 +146,9 @@ ol {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
-  content: "";
-  position: absolute;
+  content: '';
   width: 15px;
   height: 15px;
-  margin: 2px;
   background-color: #fff;
 }
 
